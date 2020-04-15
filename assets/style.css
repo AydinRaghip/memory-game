@@ -1,0 +1,184 @@
+/* General Application CSS */
+
+body {
+  background: #525150;
+}
+
+/* Start Page and End Page CSS */
+
+#startButton{
+  left: 250px;
+  top: 250px;
+  font-size: 100px;
+  position: fixed;
+  background: none;
+  border: none;
+  font-family: 'MedievalSharp', cursive;
+  cursor: pointer;
+  padding: 0;
+}
+
+#startButton:active{
+  outline: none;
+}
+
+#startButton:hover{
+  color: white;
+}
+
+/* Memory Game CSS */
+
+.board {
+  max-width: 80%;
+  margin-left: 150px;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  transition: all .5s linear;
+  transform-style: preserve-3d;
+}
+
+.tile,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url('images/games-of-thrones.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.picked {
+  transform: rotateY(180deg);
+}
+
+.pair .front {
+  background: #525150 !important;
+}
+
+/* Galaxy S5 */
+@media screen and (max-width: 360px){
+  #startButton{
+  left: 65px;
+  top: 300px;
+  font-size: 30px;
+}
+
+#startButton:active{
+  color: white;
+}
+
+.board {
+  max-width: 75%;
+  margin-left: 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile,
+.back,
+.front {
+  height: 70px;
+  width: 70px;
+  margin-right: 15px;
+}
+
+}
+
+/* Iphone X */
+@media screen and (max-width: 375px){
+  #startButton{
+  left: 65px;
+  top: 350px;
+  font-size: 30px;
+}
+
+#startButton:active{
+  color: white;
+}
+
+.board {
+  max-width: 75%;
+  margin-left: 70px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile,
+.back,
+.front {
+  height: 80px;
+  width: 80px;
+  margin-right: 40px;
+}
+
+}
+
+/* Ipad Pro */
+@media screen and (max-width: 1024px){
+  #startButton{
+  left: 120px;
+  top: 600px;
+  font-size: 100px;
+}
+
+#startButton:active{
+  color: white;
+}
+
+.board {
+  max-width: 75%;
+  margin-left: 130px;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile,
+.back,
+.front {
+  height: 200px;
+  width: 200px;
+  margin-right: 50px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
