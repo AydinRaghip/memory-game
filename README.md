@@ -43,9 +43,6 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 [Javascript](https://www.w3schools.com/js/) - Javascript aswell as Jquery was used to create the memory game itself.
 
-[Jasmine testing framework](https://jasmine.github.io/) - The Jasmine testing framework was used in order to test the javascript code that I
-had written.
-
 # Testing
 
 1. Start button testing
